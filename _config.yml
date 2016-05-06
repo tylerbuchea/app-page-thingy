@@ -28,8 +28,8 @@ app:
   screenshot: # leave blank to auto-magically populate - 640x1136, use path relative to project root with no leading slash e.g. images/app-screen-640x1136.png
 
 # Marketing
-marketing_header: # Optional
-marketing_desc: # Enter an awesome marketing description here
+marketing_header: Workout Now!
+marketing_desc: Just download the app and hit start. Don't deal with a million different settings or extensive equipment. Workout Now! uses short bodyweight workouts for the busy individual that wants to lose weight, gain muscle, and feel healthier. Use this gorgeous and simple app to to Workout Now!
 
 # Social Links
 #
