@@ -1,0 +1,27 @@
+{% if site.apple.app_id %}
+  <!-- iTunes Search API -->
+  <script>
+    $(function() {
+      var API_URL = 'https://itunes.apple.com/lookup?id={{ site.apple.app_id }}&callback=?';
+      $.getJSON(API_URL, function(res) {
+        if (res.results && res.results.length) {
+          var appInfo = res.results[0];
+          // App Icon
+          var $appIcon = $('.app-icon');
+          if ( $appIcon && !$appIcon.attr('src') && appInfo.artworkUrl512 ) {
+            $appIcon.attr('src', appInfo.artworkUrl512);
+          }
+          // App Screenshot
+          var $appScreenshot = $('.app-screenshot');
+          if ( $appScreenshot && !$appScreenshot.attr('src') && appInfo.screenshotUrls && appInfo.screenshotUrls.length ) {
+            $appScreenshot.attr('src', appInfo.screenshotUrls[0]);
+          }
+          console.info('App info successfully loaded from Apple');
+        } else {
+          console.warn('Unable to load app info from Apple');
+        }
+      });
+    });
+  </script>
+  <!-- End iTunes Search API -->
+{% endif %}

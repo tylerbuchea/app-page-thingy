@@ -1,0 +1,87 @@
+#
+# Instant App Landing Page Config
+#
+
+# If you're hosting your site at a Project repository on GitHub pages
+# (http://yourusername.github.io/repository-name)
+# and NOT your User repository (http://yourusername.github.io)
+# then add in the baseurl here, like this: "/repository-name"
+baseurl: ""
+
+# Site Info
+title: # REQUIRED - Enter your site title
+description: # Enter your site description
+
+# iOS Info
+apple:
+  app_id: # REQUIRED - 10 Digit Numeric App ID
+  affiliate_token: # Optional - Sign up here: http://www.apple.com/itunes/affiliates/
+
+# Android App Info
+google:
+  app_id: # Optional - Enter app id like: com.example.app
+
+# General App Info
+app:
+  name: # REQUIRED - Enter your app name
+  icon: # leave blank to auto-magically populate - 512px or greater square image, use path relative to project root with no leading slash e.g. images/app-icon-1024.png
+  screenshot: # leave blank to auto-magically populate - 640x1136, use path relative to project root with no leading slash e.g. images/app-screen-640x1136.png
+
+# Marketing
+marketing_header: # Optional
+marketing_desc: # Enter an awesome marketing description here
+
+# Social Links
+#
+# Includes an icon for each username you enter
+social-links:
+  github:
+  facebook:
+  twitter:
+  pinterest:
+  instagram:
+  email:
+  youtube: # channel/<your_long_string> or <user-name>
+  googleplus: # anything in your profile username that comes after plus.google.com/
+
+# Google Analytics
+google_analytics: # Enter your tracking code (e.g. UA-2110908-2) to activate tracking
+
+# Enable/Disable Features & Page Elements
+enable:
+  app_icon: true
+  smart_app_banner: true
+
+# Device
+#
+# Available devices:
+# * iphone-se-silver-vertical
+# * iphone-se-space-gray-vertical
+# * ipod-touch-blue-vertical
+device: iphone-se-silver-vertical # REQUIRED
+
+# Theme Settings
+theme: default # REQUIRED - MORE THEMES COMING SOON!
+background_color: "#989898" # Optional
+background_image: http://tripicons.com/images/lake.jpg # Optional # http://tripicons.com/images/lake.jpg
+text_color: "#fff" # Optional
+link_color: # Optional
+social_link_color: "#fff" # Optional
+download_button_background_color: "#0191FF" # Optional
+download_button_text_color: white; # Optional
+
+#
+# !! You don't need to change any of the configuration flags below !!
+#
+
+# The release of App Landing Page Now that you're using
+version: v1.0
+
+# Set the Sass partials directory, as we're using @imports
+sass:
+  style: :compressed
+
+# Exclude these files from your production _site
+exclude:
+  - LICENSE
+  - README.md
