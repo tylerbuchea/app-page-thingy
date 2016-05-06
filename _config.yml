@@ -9,21 +9,21 @@
 baseurl: ""
 
 # Site Info
-title: # REQUIRED - Enter your site title
-description: # Enter your site description
+title: Workout Now!
+description: Just download the app and hit start. Don't deal with a million different settings or extensive equipment. Workout Now! uses short bodyweight workouts for the busy individual that wants to lose weight, gain muscle, and feel healthier. Use this gorgeous and simple app to to Workout Now!
 
 # iOS Info
 apple:
-  app_id: # REQUIRED - 10 Digit Numeric App ID
+  app_id: 1046344644
   affiliate_token: # Optional - Sign up here: http://www.apple.com/itunes/affiliates/
 
 # Android App Info
 google:
-  app_id: # Optional - Enter app id like: com.example.app
+  app_id: com.tylerbuchea.workoutnow
 
 # General App Info
 app:
-  name: # REQUIRED - Enter your app name
+  name: Workout Now!
   icon: # leave blank to auto-magically populate - 512px or greater square image, use path relative to project root with no leading slash e.g. images/app-icon-1024.png
   screenshot: # leave blank to auto-magically populate - 640x1136, use path relative to project root with no leading slash e.g. images/app-screen-640x1136.png
 
